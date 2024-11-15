@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sevgilime Şiirler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sevgilim Zehra'ya Özel Şiirler</h1>
+        <p>Bizi birleştiren an: 17 Kasım 2021, 12:24</p>
+        
+        <!-- Tanışma sayacı -->
+        <div id="countdown" class="countdown">
+            <p>Tanıştığımız an: <span id="time"></span></p>
+        </div>
+
+        <!-- Şiirler -->
+        <div id="poem-buttons">
+            <button onclick="displayPoem('poem1')">Gözlerinin Işığında</button>
+            <button onclick="displayPoem('poem2')">İçimdeki Bahar</button>
+            <button onclick="displayPoem('poem3')">Seninle Her An</button>
+            <button onclick="displayPoem('poem4')">Zamanın Dışında</button>
+            <button onclick="displayPoem('poem5')">Birlikte Uyanmak</button>
+            <button onclick="displayPoem('poem6')">Sonsuz Sevda</button>
+            <button onclick="displayPoem('poem7')">Kalbimdeki Sen</button>
+            <button onclick="displayPoem('poem8')">Sevgimiz</button>
+        </div>
+
+        <!-- Şiir metni burada görüntülenecek -->
+        <div id="poem-display" class="poem-display"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

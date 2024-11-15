@@ -1,0 +1,81 @@
+/* Temel stil ayarları */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #DDA0DD;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#poem-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    background-color: #DDA0DD;
+    color: white;
+    font-size: 16px;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Kalp animasyonu için */
+@keyframes heartAnim {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+button:active {
+    animation: heartAnim 1s ease-out;
+}
+
+/* Geri sayım bölümü */
+.countdown p {
+    font-size: 18px;
+    margin: 20px;
+}
+
+/* Şiir metni */
+.poem-display {
+    background-color: #DDA0DD;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+/* Tarih animasyonu */
+#time {
+    font-weight: bold;
+    color: #FF1493;
+}
